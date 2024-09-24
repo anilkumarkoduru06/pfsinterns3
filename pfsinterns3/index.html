@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Task Manager</h>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="taskInput" placeholder="Add new task">
+                    <input type="text" class="form-control" id="taskDetails" placeholder="Details (optional)">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" id="addTaskBtn">Add Task</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-secondary" id="showAllBtn">Show All</button>
+                    <button class="btn btn-success" id="showCompletedBtn">Show Completed</button>
+                    <button class="btn btn-warning" id="showPendingBtn">Show Pending</button>
+                </div>
+                <ul class="list-group" id="taskList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

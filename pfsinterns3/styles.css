@@ -1,0 +1,36 @@
+body {
+    background-color: #e0f7fa; /* Light cyan background color */
+    color: #333; /* Dark text color for better readability */
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #00796b; /* Darker teal for the header */
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px; /* Add some space between tasks */
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-item button {
+    margin-top: 10px;
+}
+
+.task-details {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .input-group input {
+        margin-bottom: 10px;
+    }
+}
